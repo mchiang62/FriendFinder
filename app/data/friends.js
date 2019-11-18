@@ -2,9 +2,9 @@ var friendArray = [{
     name: "Melissa Chiang",
     picture: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
     scores: [
-        5,
-        1,
-        4,
+        3,
+        3,
+        2,
         4,
         5,
         1,
@@ -18,3 +18,5 @@ var friendArray = [{
 }];
 
 module.exports = friendArray;
+
+// json database is ready
