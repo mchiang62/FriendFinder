@@ -10,10 +10,10 @@ module.exports = function (app) {
     app.post("/api/friends", function (req, res) {
         // function 
         // anytime you make post request - 
-console.log(req.body)
-        res.json({})
+        console.log(req.body)
+        res.json({ok: true})
 
-    })
+    });
 
 
 
