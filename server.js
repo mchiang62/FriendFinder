@@ -10,15 +10,14 @@ var PORT = process.env.PORT || 8000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.text());
-app.use(express.json({ type: "application/vnd.api+json" }));
+
 
 app.use(express.static("app/public"));
 
 // applying routes
 
-require("./routing/apiRoutes")(app);
-require("./routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 
 app.listen(PORT, function() {
